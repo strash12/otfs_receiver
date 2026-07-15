@@ -4,6 +4,7 @@ pkg_check_modules(FFTW3F REQUIRED IMPORTED_TARGET fftw3f)
 add_library(otfs_core
     src/version.cpp
     src/fft/fft_plan.cpp
+    src/waveform/otfs_waveform.cpp
 )
 
 add_library(otfs::core ALIAS otfs_core)
