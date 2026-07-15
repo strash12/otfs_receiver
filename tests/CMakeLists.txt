@@ -30,3 +30,14 @@ otfs_set_project_warnings(aligned_buffer_test)
 otfs_enable_sanitizers(aligned_buffer_test)
 
 add_test(NAME aligned_buffer_test COMMAND aligned_buffer_test)
+
+add_executable(fft_plan_test
+    unit/fft_plan_test.cpp
+)
+
+target_link_libraries(fft_plan_test PRIVATE otfs::core)
+
+otfs_set_project_warnings(fft_plan_test)
+otfs_enable_sanitizers(fft_plan_test)
+
+add_test(NAME fft_plan_test COMMAND fft_plan_test)

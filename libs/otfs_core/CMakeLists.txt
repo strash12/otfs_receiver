@@ -1,5 +1,9 @@
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(FFTW3F REQUIRED IMPORTED_TARGET fftw3f)
+
 add_library(otfs_core
     src/version.cpp
+    src/fft/fft_plan.cpp
 )
 
 add_library(otfs::core ALIAS otfs_core)
@@ -10,6 +14,11 @@ target_include_directories(otfs_core
 )
 
 target_compile_features(otfs_core PUBLIC cxx_std_20)
+
+target_link_libraries(otfs_core
+    PRIVATE
+        PkgConfig::FFTW3F
+)
 
 otfs_set_project_warnings(otfs_core)
 otfs_enable_optimizations(otfs_core)

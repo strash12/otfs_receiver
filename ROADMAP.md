@@ -13,7 +13,7 @@
 
 ## DSP
 
-- [ ] FFT backend
+- [x] FFT backend
 - [ ] OTFS modulator
 - [ ] OTFS demodulator
 - [ ] Embedded pilot masks
