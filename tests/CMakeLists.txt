@@ -66,3 +66,15 @@ otfs_set_project_warnings(otfs_waveform_test)
 otfs_enable_sanitizers(otfs_waveform_test)
 
 add_test(NAME otfs_waveform_test COMMAND otfs_waveform_test)
+
+
+add_executable(pilot_masks_test
+    unit/pilot_masks_test.cpp
+)
+
+target_link_libraries(pilot_masks_test PRIVATE otfs::core)
+
+otfs_set_project_warnings(pilot_masks_test)
+otfs_enable_sanitizers(pilot_masks_test)
+
+add_test(NAME pilot_masks_test COMMAND pilot_masks_test)
