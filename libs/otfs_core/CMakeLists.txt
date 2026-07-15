@@ -18,6 +18,7 @@ add_library(otfs_core
     src/framing/frame_extractor.cpp
     src/pilot/pilot_observation.cpp
     src/channel_estimation/threshold_estimator.cpp
+    src/channel_estimation/fractional_peak_refiner.cpp
 )
 
 add_library(otfs::core ALIAS otfs_core)

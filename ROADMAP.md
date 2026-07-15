@@ -97,3 +97,12 @@
 - [x] Maximum-path cap
 - [ ] Fractional delay refinement
 - [ ] Fractional Doppler refinement
+
+## Fractional Peak Refinement
+
+- [x] Three-point parabolic delay refinement
+- [x] Three-point parabolic Doppler refinement
+- [x] Circular Doppler-boundary handling
+- [x] Curvature validation and bounded offset
+- [ ] FRFT matched-filter local search
+- [ ] Multi-pass joint path refinement
