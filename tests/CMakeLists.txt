@@ -19,3 +19,14 @@ otfs_set_project_warnings(data_model_test)
 otfs_enable_sanitizers(data_model_test)
 
 add_test(NAME data_model_test COMMAND data_model_test)
+
+add_executable(aligned_buffer_test
+    unit/aligned_buffer_test.cpp
+)
+
+target_link_libraries(aligned_buffer_test PRIVATE otfs::core)
+
+otfs_set_project_warnings(aligned_buffer_test)
+otfs_enable_sanitizers(aligned_buffer_test)
+
+add_test(NAME aligned_buffer_test COMMAND aligned_buffer_test)
