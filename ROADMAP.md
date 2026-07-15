@@ -7,7 +7,7 @@
 - [x] CMake skeleton
 - [x] Debug/Release presets
 - [x] Common types
-- [ ] Aligned memory
+- [x] Aligned memory
 - [ ] Timer
 - [ ] Logger
 
