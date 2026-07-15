@@ -6,7 +6,7 @@
 - [x] Architecture
 - [x] CMake skeleton
 - [x] Debug/Release presets
-- [ ] Common types
+- [x] Common types
 - [ ] Aligned memory
 - [ ] Timer
 - [ ] Logger

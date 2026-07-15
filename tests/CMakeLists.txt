@@ -8,3 +8,14 @@ otfs_set_project_warnings(otfs_core_smoke_test)
 otfs_enable_sanitizers(otfs_core_smoke_test)
 
 add_test(NAME otfs_core_smoke_test COMMAND otfs_core_smoke_test)
+
+add_executable(data_model_test
+    unit/data_model_test.cpp
+)
+
+target_link_libraries(data_model_test PRIVATE otfs::core)
+
+otfs_set_project_warnings(data_model_test)
+otfs_enable_sanitizers(data_model_test)
+
+add_test(NAME data_model_test COMMAND data_model_test)
