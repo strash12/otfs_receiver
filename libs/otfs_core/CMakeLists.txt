@@ -5,6 +5,7 @@ add_library(otfs_core
     src/version.cpp
     src/fft/fft_plan.cpp
     src/waveform/otfs_waveform.cpp
+    src/pilot/pilot_masks.cpp
 )
 
 add_library(otfs::core ALIAS otfs_core)

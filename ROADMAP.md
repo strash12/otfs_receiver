@@ -16,7 +16,7 @@
 - [x] FFT backend
 - [x] OTFS modulator: CP, RCP, ZP, RZP, NONE
 - [x] OTFS demodulator: CP, RCP, ZP, RZP, NONE
-- [ ] Embedded pilot masks
+- [x] Embedded pilot masks
 - [ ] Chirp synchronizer
 - [ ] CFO estimator
 - [ ] FRFT-SIC
