@@ -17,6 +17,7 @@ add_library(otfs_core
     src/resampling/integer_decimator.cpp
     src/framing/frame_extractor.cpp
     src/pilot/pilot_observation.cpp
+    src/channel_estimation/threshold_estimator.cpp
 )
 
 add_library(otfs::core ALIAS otfs_core)

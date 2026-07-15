@@ -182,3 +182,18 @@ add_test(
     NAME pilot_observation_test
     COMMAND pilot_observation_test
 )
+
+
+add_executable(threshold_estimator_test
+    unit/threshold_estimator_test.cpp
+)
+
+target_link_libraries(threshold_estimator_test PRIVATE otfs::core)
+
+otfs_set_project_warnings(threshold_estimator_test)
+otfs_enable_sanitizers(threshold_estimator_test)
+
+add_test(
+    NAME threshold_estimator_test
+    COMMAND threshold_estimator_test
+)
