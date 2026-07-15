@@ -17,7 +17,7 @@
 - [x] OTFS modulator: CP, RCP, ZP, RZP, NONE
 - [x] OTFS demodulator: CP, RCP, ZP, RZP, NONE
 - [x] Embedded pilot masks
-- [ ] Chirp synchronizer
+- [x] Chirp synchronizer
 - [ ] CFO estimator
 - [ ] FRFT-SIC
 - [ ] FID operator
@@ -56,6 +56,6 @@
 - [x] Front-end metrics
 - [x] Allocation-free block processing
 - [ ] FIR filtering
-- [ ] Chirp synchronizer
+- [x] Chirp synchronizer
 - [ ] Coarse CFO
 - [ ] Fine CFO
