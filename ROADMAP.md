@@ -47,3 +47,15 @@
 - [x] OTFS MATLAB/C++ regression test
 - [x] Pilot-mask exact comparison
 - [ ] Generated MATLAB reference dataset committed
+
+## Radio Front-End
+
+- [x] Streaming DC remover
+- [x] RMS/power meter
+- [x] Optional RMS AGC
+- [x] Front-end metrics
+- [x] Allocation-free block processing
+- [ ] FIR filtering
+- [ ] Chirp synchronizer
+- [ ] Coarse CFO
+- [ ] Fine CFO
