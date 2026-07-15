@@ -68,3 +68,13 @@
 - [x] Refined chirp timing
 - [x] Residual CFO estimation
 - [x] Final CFO correction
+
+## Frame Extraction and Resampling
+
+- [x] Parameterized input/processing sample rates
+- [x] Integer decimation factor validation
+- [x] FIR anti-alias decimator
+- [x] Factor 1 bypass
+- [x] Factors 2 and 4
+- [x] Parameterized frame offset
+- [x] Pluto mapping: 4864 -> 2432
