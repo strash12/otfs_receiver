@@ -78,3 +78,12 @@
 - [x] Factors 2 and 4
 - [x] Parameterized frame offset
 - [x] Pluto mapping: 4864 -> 2432
+
+## Embedded Pilot Observation
+
+- [x] Observation-index cache
+- [x] Noise-region index cache
+- [x] Pilot normalization
+- [x] Noise variance estimate
+- [x] Peak delay/Doppler detection
+- [x] Peak-to-noise metric
