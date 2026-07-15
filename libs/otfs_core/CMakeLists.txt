@@ -11,6 +11,8 @@ add_library(otfs_core
     src/frontend/rms_agc.cpp
     src/frontend/radio_frontend.cpp
     src/synchronization/chirp_synchronizer.cpp
+    src/cfo/cfo_estimator.cpp
+    src/cfo/cfo_corrector.cpp
 )
 
 add_library(otfs::core ALIAS otfs_core)

@@ -128,3 +128,15 @@ otfs_set_project_warnings(chirp_synchronizer_test)
 otfs_enable_sanitizers(chirp_synchronizer_test)
 
 add_test(NAME chirp_synchronizer_test COMMAND chirp_synchronizer_test)
+
+
+add_executable(cfo_processing_test
+    unit/cfo_processing_test.cpp
+)
+
+target_link_libraries(cfo_processing_test PRIVATE otfs::core)
+
+otfs_set_project_warnings(cfo_processing_test)
+otfs_enable_sanitizers(cfo_processing_test)
+
+add_test(NAME cfo_processing_test COMMAND cfo_processing_test)

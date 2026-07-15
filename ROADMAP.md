@@ -57,5 +57,5 @@
 - [x] Allocation-free block processing
 - [ ] FIR filtering
 - [x] Chirp synchronizer
-- [ ] Coarse CFO
-- [ ] Fine CFO
+- [x] Coarse CFO
+- [x] Fine CFO
