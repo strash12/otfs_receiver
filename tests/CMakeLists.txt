@@ -52,3 +52,17 @@ otfs_set_project_warnings(dsp_infrastructure_test)
 otfs_enable_sanitizers(dsp_infrastructure_test)
 
 add_test(NAME dsp_infrastructure_test COMMAND dsp_infrastructure_test)
+
+
+
+
+add_executable(otfs_waveform_test
+    unit/otfs_waveform_test.cpp
+)
+
+target_link_libraries(otfs_waveform_test PRIVATE otfs::core)
+
+otfs_set_project_warnings(otfs_waveform_test)
+otfs_enable_sanitizers(otfs_waveform_test)
+
+add_test(NAME otfs_waveform_test COMMAND otfs_waveform_test)

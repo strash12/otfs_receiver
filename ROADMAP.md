@@ -14,8 +14,8 @@
 ## DSP
 
 - [x] FFT backend
-- [ ] OTFS modulator
-- [ ] OTFS demodulator
+- [x] OTFS modulator: CP, RCP, ZP, RZP, NONE
+- [x] OTFS demodulator: CP, RCP, ZP, RZP, NONE
 - [ ] Embedded pilot masks
 - [ ] Chirp synchronizer
 - [ ] CFO estimator
