@@ -104,3 +104,15 @@ set_tests_properties(
     PROPERTIES
         SKIP_RETURN_CODE 77
 )
+
+
+add_executable(radio_frontend_test
+    unit/radio_frontend_test.cpp
+)
+
+target_link_libraries(radio_frontend_test PRIVATE otfs::core)
+
+otfs_set_project_warnings(radio_frontend_test)
+otfs_enable_sanitizers(radio_frontend_test)
+
+add_test(NAME radio_frontend_test COMMAND radio_frontend_test)

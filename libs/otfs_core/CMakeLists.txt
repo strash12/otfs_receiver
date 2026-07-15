@@ -6,6 +6,10 @@ add_library(otfs_core
     src/fft/fft_plan.cpp
     src/waveform/otfs_waveform.cpp
     src/pilot/pilot_masks.cpp
+    src/frontend/dc_remover.cpp
+    src/frontend/power_meter.cpp
+    src/frontend/rms_agc.cpp
+    src/frontend/radio_frontend.cpp
 )
 
 add_library(otfs::core ALIAS otfs_core)
