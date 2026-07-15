@@ -59,3 +59,12 @@
 - [x] Chirp synchronizer
 - [x] Coarse CFO
 - [x] Fine CFO
+
+## Synchronization Pipeline
+
+- [x] Coarse chirp timing
+- [x] Coarse CFO estimation
+- [x] Coarse CFO correction
+- [x] Refined chirp timing
+- [x] Residual CFO estimation
+- [x] Final CFO correction

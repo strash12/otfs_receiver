@@ -140,3 +140,18 @@ otfs_set_project_warnings(cfo_processing_test)
 otfs_enable_sanitizers(cfo_processing_test)
 
 add_test(NAME cfo_processing_test COMMAND cfo_processing_test)
+
+
+add_executable(synchronization_pipeline_test
+    unit/synchronization_pipeline_test.cpp
+)
+
+target_link_libraries(synchronization_pipeline_test PRIVATE otfs::core)
+
+otfs_set_project_warnings(synchronization_pipeline_test)
+otfs_enable_sanitizers(synchronization_pipeline_test)
+
+add_test(
+    NAME synchronization_pipeline_test
+    COMMAND synchronization_pipeline_test
+)

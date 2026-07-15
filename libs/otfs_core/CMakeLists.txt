@@ -13,6 +13,7 @@ add_library(otfs_core
     src/synchronization/chirp_synchronizer.cpp
     src/cfo/cfo_estimator.cpp
     src/cfo/cfo_corrector.cpp
+    src/synchronization/synchronization_pipeline.cpp
 )
 
 add_library(otfs::core ALIAS otfs_core)
