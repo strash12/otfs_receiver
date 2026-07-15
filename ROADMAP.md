@@ -87,3 +87,13 @@
 - [x] Noise variance estimate
 - [x] Peak delay/Doppler detection
 - [x] Peak-to-noise metric
+
+## Baseline Channel Estimation
+
+- [x] Noise-adaptive threshold estimator
+- [x] Strongest-path fallback
+- [x] Integer delay/Doppler path extraction
+- [x] Complex path gain recovery
+- [x] Maximum-path cap
+- [ ] Fractional delay refinement
+- [ ] Fractional Doppler refinement
