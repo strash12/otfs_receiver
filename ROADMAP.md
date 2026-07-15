@@ -39,3 +39,11 @@
 - [x] DSP stage interface
 - [x] Static pipeline
 - [x] FFT plan cache
+
+## MATLAB Regression
+
+- [x] Binary complex-float reference format
+- [x] C++ reference-data reader
+- [x] OTFS MATLAB/C++ regression test
+- [x] Pilot-mask exact comparison
+- [ ] Generated MATLAB reference dataset committed

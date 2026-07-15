@@ -78,3 +78,29 @@ otfs_set_project_warnings(pilot_masks_test)
 otfs_enable_sanitizers(pilot_masks_test)
 
 add_test(NAME pilot_masks_test COMMAND pilot_masks_test)
+
+
+add_executable(matlab_reference_test
+    regression/matlab_reference_test.cpp
+)
+
+target_link_libraries(matlab_reference_test
+    PRIVATE
+        otfs::core
+        otfs::io
+)
+
+otfs_set_project_warnings(matlab_reference_test)
+otfs_enable_sanitizers(matlab_reference_test)
+
+add_test(
+    NAME matlab_reference_test
+    COMMAND matlab_reference_test
+        ${CMAKE_CURRENT_SOURCE_DIR}/matlab_reference/generated
+)
+
+set_tests_properties(
+    matlab_reference_test
+    PROPERTIES
+        SKIP_RETURN_CODE 77
+)
