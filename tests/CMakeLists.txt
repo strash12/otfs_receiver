@@ -197,3 +197,18 @@ add_test(
     NAME threshold_estimator_test
     COMMAND threshold_estimator_test
 )
+
+
+add_executable(fractional_peak_refiner_test
+    unit/fractional_peak_refiner_test.cpp
+)
+
+target_link_libraries(fractional_peak_refiner_test PRIVATE otfs::core)
+
+otfs_set_project_warnings(fractional_peak_refiner_test)
+otfs_enable_sanitizers(fractional_peak_refiner_test)
+
+add_test(
+    NAME fractional_peak_refiner_test
+    COMMAND fractional_peak_refiner_test
+)
