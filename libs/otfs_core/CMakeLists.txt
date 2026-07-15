@@ -16,6 +16,7 @@ add_library(otfs_core
     src/synchronization/synchronization_pipeline.cpp
     src/resampling/integer_decimator.cpp
     src/framing/frame_extractor.cpp
+    src/pilot/pilot_observation.cpp
 )
 
 add_library(otfs::core ALIAS otfs_core)

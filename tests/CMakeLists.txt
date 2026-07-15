@@ -167,3 +167,18 @@ otfs_set_project_warnings(frame_resampling_test)
 otfs_enable_sanitizers(frame_resampling_test)
 
 add_test(NAME frame_resampling_test COMMAND frame_resampling_test)
+
+
+add_executable(pilot_observation_test
+    unit/pilot_observation_test.cpp
+)
+
+target_link_libraries(pilot_observation_test PRIVATE otfs::core)
+
+otfs_set_project_warnings(pilot_observation_test)
+otfs_enable_sanitizers(pilot_observation_test)
+
+add_test(
+    NAME pilot_observation_test
+    COMMAND pilot_observation_test
+)
