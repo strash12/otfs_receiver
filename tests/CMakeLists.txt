@@ -41,3 +41,14 @@ otfs_set_project_warnings(fft_plan_test)
 otfs_enable_sanitizers(fft_plan_test)
 
 add_test(NAME fft_plan_test COMMAND fft_plan_test)
+
+add_executable(dsp_infrastructure_test
+    unit/dsp_infrastructure_test.cpp
+)
+
+target_link_libraries(dsp_infrastructure_test PRIVATE otfs::core)
+
+otfs_set_project_warnings(dsp_infrastructure_test)
+otfs_enable_sanitizers(dsp_infrastructure_test)
+
+add_test(NAME dsp_infrastructure_test COMMAND dsp_infrastructure_test)

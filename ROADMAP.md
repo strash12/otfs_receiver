@@ -31,3 +31,11 @@
 - [ ] USRP
 - [ ] Realtime pipeline
 - [ ] GUI
+
+## DSP Infrastructure
+
+- [x] Column-major grid view
+- [x] OTFS workspace
+- [x] DSP stage interface
+- [x] Static pipeline
+- [x] FFT plan cache
