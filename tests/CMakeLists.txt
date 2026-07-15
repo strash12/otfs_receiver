@@ -155,3 +155,15 @@ add_test(
     NAME synchronization_pipeline_test
     COMMAND synchronization_pipeline_test
 )
+
+
+add_executable(frame_resampling_test
+    unit/frame_resampling_test.cpp
+)
+
+target_link_libraries(frame_resampling_test PRIVATE otfs::core)
+
+otfs_set_project_warnings(frame_resampling_test)
+otfs_enable_sanitizers(frame_resampling_test)
+
+add_test(NAME frame_resampling_test COMMAND frame_resampling_test)
