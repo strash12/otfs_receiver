@@ -116,3 +116,15 @@ otfs_set_project_warnings(radio_frontend_test)
 otfs_enable_sanitizers(radio_frontend_test)
 
 add_test(NAME radio_frontend_test COMMAND radio_frontend_test)
+
+
+add_executable(chirp_synchronizer_test
+    unit/chirp_synchronizer_test.cpp
+)
+
+target_link_libraries(chirp_synchronizer_test PRIVATE otfs::core)
+
+otfs_set_project_warnings(chirp_synchronizer_test)
+otfs_enable_sanitizers(chirp_synchronizer_test)
+
+add_test(NAME chirp_synchronizer_test COMMAND chirp_synchronizer_test)
