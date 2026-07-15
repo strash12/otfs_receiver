@@ -1,0 +1,32 @@
+# Build
+/build/
+/out/
+/cmake-build-*/
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# Generated
+compile_commands.json
+CMakeUserPresets.json
+
+# Objects and binaries
+*.o
+*.obj
+*.a
+*.so
+*.dll
+*.exe
+
+# Captures and generated data
+*.log
+*.bin
+*.cf32
+*.sc16
+*.mat
+
+# OS
+.DS_Store
+Thumbs.db
