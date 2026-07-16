@@ -297,3 +297,56 @@ set_tests_properties(
     PROPERTIES
         SKIP_RETURN_CODE 77
 )
+
+
+add_executable(fid_operator_test
+    unit/fid_operator_test.cpp
+)
+
+target_link_libraries(fid_operator_test PRIVATE otfs::core)
+
+otfs_set_project_warnings(fid_operator_test)
+otfs_enable_sanitizers(fid_operator_test)
+
+add_test(
+    NAME fid_operator_test
+    COMMAND fid_operator_test
+)
+
+
+add_executable(cg_lmmse_test
+    unit/cg_lmmse_test.cpp
+)
+
+target_link_libraries(cg_lmmse_test PRIVATE otfs::core)
+
+otfs_set_project_warnings(cg_lmmse_test)
+otfs_enable_sanitizers(cg_lmmse_test)
+
+add_test(NAME cg_lmmse_test COMMAND cg_lmmse_test)
+
+
+add_executable(fid_matlab_regression_test
+    regression/fid_matlab_regression_test.cpp
+)
+
+target_link_libraries(fid_matlab_regression_test
+    PRIVATE
+        otfs::core
+        otfs::io
+)
+
+otfs_set_project_warnings(fid_matlab_regression_test)
+otfs_enable_sanitizers(fid_matlab_regression_test)
+
+add_test(
+    NAME fid_matlab_regression_test
+    COMMAND fid_matlab_regression_test
+        ${CMAKE_CURRENT_SOURCE_DIR}/matlab_reference/generated/fid
+)
+
+set_tests_properties(
+    fid_matlab_regression_test
+    PROPERTIES
+        SKIP_RETURN_CODE 77
+)
