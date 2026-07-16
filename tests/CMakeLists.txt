@@ -212,3 +212,18 @@ add_test(
     NAME fractional_peak_refiner_test
     COMMAND fractional_peak_refiner_test
 )
+
+
+add_executable(frft_local_search_test
+    unit/frft_local_search_test.cpp
+)
+
+target_link_libraries(frft_local_search_test PRIVATE otfs::core)
+
+otfs_set_project_warnings(frft_local_search_test)
+otfs_enable_sanitizers(frft_local_search_test)
+
+add_test(
+    NAME frft_local_search_test
+    COMMAND frft_local_search_test
+)

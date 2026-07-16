@@ -106,3 +106,27 @@
 - [x] Curvature validation and bounded offset
 - [ ] FRFT matched-filter local search
 - [ ] Multi-pass joint path refinement
+
+## Fractional Delay-Doppler Matched-Filter Search
+
+- [x] Exact fractional-delay reference
+- [x] Exact fractional-Doppler reference
+- [x] Projection onto pilot observation region
+- [x] Two-dimensional local profile-likelihood search
+- [x] Parabolic peak interpolation
+- [x] Complex gain estimate
+- [ ] SIC residual update
+- [ ] Multi-path coordinate refinement
+- [ ] Joint regularized LS
+
+
+## Exact FRFT-SIC Port
+
+- [ ] MATLAB-equivalent reference operator
+- [ ] MATLAB regression for reference vectors
+- [ ] Greedy SIC path extraction
+- [ ] Residual-energy stopping
+- [ ] Robust detection threshold
+- [ ] Multi-pass leave-one-out refinement
+- [ ] Regularized joint LS gains
+- [ ] Path pruning
