@@ -122,8 +122,8 @@
 
 ## Exact FRFT-SIC Port
 
-- [ ] MATLAB-equivalent reference operator
-- [ ] MATLAB regression for reference vectors
+- [x] MATLAB-equivalent reference operator
+- [x] MATLAB regression for reference vectors
 - [ ] Greedy SIC path extraction
 - [ ] Residual-energy stopping
 - [ ] Robust detection threshold
