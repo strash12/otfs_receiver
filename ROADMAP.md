@@ -139,5 +139,5 @@
 - [x] Adjoint identity test
 - [x] Identity-channel regression
 - [x] Power-iteration spectral norm
-- [ ] MATLAB FID regression
-- [ ] CG-LMMSE integration
+- [x] MATLAB FID regression
+- [x] CG-LMMSE integration
