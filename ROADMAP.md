@@ -122,11 +122,11 @@
 
 ## Exact FRFT-SIC Port
 
-- [ ] MATLAB-equivalent reference operator
-- [ ] MATLAB regression for reference vectors
-- [ ] Greedy SIC path extraction
-- [ ] Residual-energy stopping
+- [x] MATLAB-equivalent reference operator
+- [x] MATLAB regression for reference vectors
+- [x] Greedy SIC path extraction
+- [x] Residual-energy stopping
 - [ ] Robust detection threshold
-- [ ] Multi-pass leave-one-out refinement
-- [ ] Regularized joint LS gains
-- [ ] Path pruning
+- [x] Multi-pass leave-one-out refinement
+- [x] Regularized joint LS gains
+- [x] Path pruning

@@ -227,3 +227,73 @@ add_test(
     NAME frft_local_search_test
     COMMAND frft_local_search_test
 )
+
+
+add_executable(fractional_reference_regression_test
+    regression/fractional_reference_regression_test.cpp
+)
+
+target_link_libraries(fractional_reference_regression_test
+    PRIVATE
+        otfs::core
+        otfs::io
+)
+
+otfs_set_project_warnings(
+    fractional_reference_regression_test)
+
+otfs_enable_sanitizers(
+    fractional_reference_regression_test)
+
+add_test(
+    NAME fractional_reference_regression_test
+    COMMAND fractional_reference_regression_test
+        ${CMAKE_CURRENT_SOURCE_DIR}/matlab_reference/generated/fractional_reference
+)
+
+set_tests_properties(
+    fractional_reference_regression_test
+    PROPERTIES
+        SKIP_RETURN_CODE 77
+)
+
+
+add_executable(frft_sic_estimator_test
+    unit/frft_sic_estimator_test.cpp
+)
+
+target_link_libraries(frft_sic_estimator_test PRIVATE otfs::core)
+
+otfs_set_project_warnings(frft_sic_estimator_test)
+otfs_enable_sanitizers(frft_sic_estimator_test)
+
+add_test(
+    NAME frft_sic_estimator_test
+    COMMAND frft_sic_estimator_test
+)
+
+
+add_executable(frft_sic_regression_test
+    regression/frft_sic_regression_test.cpp
+)
+
+target_link_libraries(frft_sic_regression_test
+    PRIVATE
+        otfs::core
+        otfs::io
+)
+
+otfs_set_project_warnings(frft_sic_regression_test)
+otfs_enable_sanitizers(frft_sic_regression_test)
+
+add_test(
+    NAME frft_sic_regression_test
+    COMMAND frft_sic_regression_test
+        ${CMAKE_CURRENT_SOURCE_DIR}/matlab_reference/generated/frft_sic
+)
+
+set_tests_properties(
+    frft_sic_regression_test
+    PROPERTIES
+        SKIP_RETURN_CODE 77
+)

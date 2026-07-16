@@ -1,6 +1,7 @@
 add_library(otfs_io
     src/iq_format.cpp
     src/reference_data.cpp
+    src/binary_array.cpp
 )
 
 add_library(otfs::io ALIAS otfs_io)
