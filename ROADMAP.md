@@ -130,3 +130,14 @@
 - [x] Multi-pass leave-one-out refinement
 - [x] Regularized joint LS gains
 - [x] Path pruning
+
+
+## FID Operator
+
+- [x] Matrix-free forward operator G
+- [x] Matrix-free adjoint operator G^H
+- [x] Adjoint identity test
+- [x] Identity-channel regression
+- [x] Power-iteration spectral norm
+- [ ] MATLAB FID regression
+- [ ] CG-LMMSE integration

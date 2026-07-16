@@ -297,3 +297,18 @@ set_tests_properties(
     PROPERTIES
         SKIP_RETURN_CODE 77
 )
+
+
+add_executable(fid_operator_test
+    unit/fid_operator_test.cpp
+)
+
+target_link_libraries(fid_operator_test PRIVATE otfs::core)
+
+otfs_set_project_warnings(fid_operator_test)
+otfs_enable_sanitizers(fid_operator_test)
+
+add_test(
+    NAME fid_operator_test
+    COMMAND fid_operator_test
+)
