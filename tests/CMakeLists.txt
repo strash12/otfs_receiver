@@ -256,3 +256,18 @@ set_tests_properties(
     PROPERTIES
         SKIP_RETURN_CODE 77
 )
+
+
+add_executable(frft_sic_estimator_test
+    unit/frft_sic_estimator_test.cpp
+)
+
+target_link_libraries(frft_sic_estimator_test PRIVATE otfs::core)
+
+otfs_set_project_warnings(frft_sic_estimator_test)
+otfs_enable_sanitizers(frft_sic_estimator_test)
+
+add_test(
+    NAME frft_sic_estimator_test
+    COMMAND frft_sic_estimator_test
+)
